@@ -41,3 +41,11 @@ Now we shall test out a recursive function to see the effects that it has on the
 Notice that in our recursive function, each deeper call has a smaller address. This confirms that the stack **grows downward**, meaning newer frames are allocated at lower addresses:<br/>
 <img width="324" height="271" alt="image" src="https://github.com/user-attachments/assets/d2b5214e-f2ad-4dd4-b5fb-f17f9d1e20b1" /><br/>
 
+# Heap Segment
+
+Let us now compare to the growth in the heap segment:<br/>
+<img width="495" height="208" alt="image" src="https://github.com/user-attachments/assets/9c6e124b-e6fc-4b07-950f-72f8f9493bdd" /><br/>
+<br/>
+The output shows a larger address for each new variable declared on the heap segment:<br/>
+<img width="371" height="294" alt="image" src="https://github.com/user-attachments/assets/95c8bbe3-91b4-46cf-a8d2-eb04c2564119" /><br/>
+This tells us that the heap **grows upward**, meaning newer frames are allocated at higher addresses in contrast to the stack.<br/>
