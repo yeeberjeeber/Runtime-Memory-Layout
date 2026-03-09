@@ -23,7 +23,8 @@ We begin this project by first identifying the memory addresses for objects stor
 <img width="376" height="315" alt="image" src="https://github.com/user-attachments/assets/a6a1e76e-659f-43b3-9aae-459e5d363d7f" /><br/>
 <br/>
 The image above shows us **how different segments are arranged in memory**.<br/>
-If it looks confusing to read, just know that memory addresses are just numbers. Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
+Each memory address is simply a numeric value; higher numbers indicate higher locations in virtual memory, and lower numbers indicate lower locations.<br/>
+Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
 Memory in a process is divided into segments: 
 - the **text segment** holds code
 - **Data/BSS segments** hold global variables
