@@ -52,7 +52,7 @@ This tells us that the heap **grows upward**, meaning newer allocations are plac
 
 # Data / BSS Segments
 
-If you noticed in the earlier screenshot, the difference in addresses for both segments are 4 bytes:<br/>
+If you noticed in the earlier image, the difference in addresses for both segments are 4 bytes:<br/>
 <img width="353" height="139" alt="image" src="https://github.com/user-attachments/assets/83de65cb-cccf-468b-ab1b-6e3dcb26ef72" /><br/>
 This is because the addresses here are typically near each other in memory within their respective segments.<br/>
 Variables within a segment are usually contiguous, though small gaps may exist due to alignment or compiler optimizations.<br/>
