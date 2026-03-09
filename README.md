@@ -57,3 +57,9 @@ If you noticed in the earlier image, the difference in addresses for both segmen
 This is because the addresses here are typically near each other in memory within their respective segments.<br/>
 Variables within a segment are usually contiguous, though small gaps may exist due to alignment or compiler optimizations.<br/>
 
+# Text Segment
+
+The text segment contains the compiled functions.<br/>
+The function code, everything inside the `{...}` is stored in the text segment, because it is compiled machine code.<br/>
+These addresses are usually **fixed and read-only**.<br/>
+<br/>
