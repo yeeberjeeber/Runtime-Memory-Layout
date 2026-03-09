@@ -28,4 +28,5 @@ If it looks confusing to read, just know that memory addresses are just numbers.
 For example, we compare `initializedGlobal` against `sampleFunction`:<br/>
 - 0x00007FF7FFCFF000 (`initializedGlobal`)
 - 0x00007FF7FFCF11EA (`sampleFunction`)
+<br/>
 The first is higher than the second because 0x00007FF7FFCFF000 > 0x00007FF7FFCF11EA.
