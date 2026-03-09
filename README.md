@@ -76,6 +76,7 @@ This irregularity is due to the behavior of the heap allocator. It may:<br/>
 - Reuse freed memory blocks
 - Allocate non-contiguous chunks for alignment
 - Or manage small internal caches<br/>
+<br/>
 which can cause addresses to appear out of order.<br/>
 <br/>
 Only consecutive `new` calls without deletion may mostly increase (as we have done in the Heap Segment above), but heap addresses are not guaranteed to always strictly increase.<br/>
