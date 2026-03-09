@@ -27,10 +27,10 @@ Each memory address is simply a numeric value; higher numbers indicate higher lo
 Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
 <br/>
 Memory in a process is divided into segments: 
-- the **text segment** holds code
+- **Text segment** holds code
 - **Data/BSS segments** hold global variables
-- the **heap segment** stores dynamically allocated memory
-- the **stack segment** stores local variables and function frames.
+- **Heap segment** stores dynamically allocated memory
+- **Stack segment** stores local variables and function frames.
 <br/>
 
 # Stack Segment
