@@ -25,6 +25,7 @@ We begin this project by first identifying the memory addresses for objects stor
 The image above shows us **how different segments are arranged in memory**.<br/>
 Each memory address is simply a numeric value; higher numbers indicate higher locations in virtual memory, and lower numbers indicate lower locations.<br/>
 Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
+<br/>
 Memory in a process is divided into segments: 
 - the **text segment** holds code
 - **Data/BSS segments** hold global variables
