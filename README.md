@@ -32,6 +32,9 @@ Memory in a process is divided into segments:
 - the **heap segment** stores dynamically allocated memory
 - the **stack segment** stores local variables and function frames.
 <br/>
+
+# Stack Segment
+
 Now we shall test out a recursive function to see the effects that it has on the stack:<br/>
 <img width="480" height="196" alt="image" src="https://github.com/user-attachments/assets/7d76caaf-b81a-445f-b9b8-74a6d97dc5a1" /><br/>
 <br/>
