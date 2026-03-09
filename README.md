@@ -49,3 +49,9 @@ Let us now compare to the growth in the heap segment:<br/>
 The output shows a larger address for each new variable declared on the heap segment:<br/>
 <img width="371" height="294" alt="image" src="https://github.com/user-attachments/assets/95c8bbe3-91b4-46cf-a8d2-eb04c2564119" /><br/>
 This tells us that the heap **grows upward**, meaning newer frames are allocated at higher addresses in contrast to the stack.<br/>
+
+# Data / BSS Segments
+
+If you noticed in the earlier screenshot, the difference in addresses for both segments are 4 bytes:<br/>
+<img width="353" height="139" alt="image" src="https://github.com/user-attachments/assets/83de65cb-cccf-468b-ab1b-6e3dcb26ef72" /><br/>
+This is because the addresses here are typically near each other in memory within their respective segments.<br/>
