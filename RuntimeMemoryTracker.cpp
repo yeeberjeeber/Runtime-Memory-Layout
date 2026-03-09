@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdint>
+#include "Header.h"
 using namespace std;
 
 int initializedGlobal = 42;
@@ -19,6 +20,8 @@ void recurse(int depth) {
 }
 
 int main() {
+
+	heapAllocation(10);
 	recurse(1);
 	cout << endl;
 
