@@ -33,5 +33,6 @@ Memory in a process is divided into segments:
 Now we shall test out a recursive function to see the effects that it has on the stack:<br/>
 <img width="480" height="196" alt="image" src="https://github.com/user-attachments/assets/7d76caaf-b81a-445f-b9b8-74a6d97dc5a1" /><br/>
 <br/>
-As we can see in the output, the addresses are decreasing, as stack grows downward over time:<br/>
+Notice that in our recursive function, each deeper call has a smaller address. This confirms that the stack grows downward, meaning newer frames are allocated at lower addresses:<br/>
 <img width="324" height="271" alt="image" src="https://github.com/user-attachments/assets/d2b5214e-f2ad-4dd4-b5fb-f17f9d1e20b1" /><br/>
+
