@@ -68,9 +68,9 @@ These addresses are usually **fixed and read-only**.<br/>
 
 Similar to what we have already done previously, we have developed a function to allocate memory onto the heap:<br/>
 <img width="779" height="444" alt="image" src="https://github.com/user-attachments/assets/03af1747-809e-4326-927c-f7b7d3d1880d" /><br/>
-We have also included another for loop to track the growth of the heap.<br/>
+We have also included a loop to perform multiple allocations and record each memory address, allowing us to observe how the heap grows over time.<br/>
 <br/>
-As per the output below, it seems that the heap allocation growth is not as linear as we had previously thought:<br/>
+As shown in the output, the heap addresses do not always increase sequentially; the growth is irregular rather than strictly linear:<br/>
 <img width="555" height="404" alt="image" src="https://github.com/user-attachments/assets/ab419d8c-43d9-4f78-8822-78fa5fa1d75b" /><br/>
-This is due to the allocator behaviour: the heap allocator may reuse freed blocks or allocate in non-contiguous blocks due to alignment, malloc implementation, or small caches.<br/>
+This irregularity is due to the behavior of the heap allocator. It may reuse freed memory blocks, allocate non-contiguous chunks for alignment, or manage small internal caches, which can cause addresses to appear out of order.<br/>
 <br/>
