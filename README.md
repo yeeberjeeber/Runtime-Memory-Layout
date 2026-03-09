@@ -72,5 +72,10 @@ We have also included a loop to perform multiple allocations and record each mem
 <br/>
 As shown in the output, the heap addresses do not always increase sequentially; the growth is irregular rather than strictly linear:<br/>
 <img width="555" height="404" alt="image" src="https://github.com/user-attachments/assets/ab419d8c-43d9-4f78-8822-78fa5fa1d75b" /><br/>
-This irregularity is due to the behavior of the heap allocator. It may reuse freed memory blocks, allocate non-contiguous chunks for alignment, or manage small internal caches, which can cause addresses to appear out of order.<br/>
+This irregularity is due to the behavior of the heap allocator. It may:<br/>
+- Reuse freed memory blocks
+- Allocate non-contiguous chunks for alignment
+- Or manage small internal caches
+which can cause addresses to appear out of order.<br/>
 <br/>
+Only consecutive `new` calls without deletion may mostly increase (as we have done in the Heap Segment above), but heap addresses are not guaranteed to always strictly increase.<br/>
