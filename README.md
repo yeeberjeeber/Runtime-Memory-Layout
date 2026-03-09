@@ -66,7 +66,7 @@ These addresses are usually **fixed and read-only**.<br/>
 
 # Heap Allocation Tracker
 
-Similar to what we have already done previously, we have developed a function to allocate heaps onto memory:<br/>
+Similar to what we have already done previously, we have developed a function to allocate memory onto the heap:<br/>
 <img width="779" height="444" alt="image" src="https://github.com/user-attachments/assets/03af1747-809e-4326-927c-f7b7d3d1880d" /><br/>
 We have also included another for loop to track the growth of the heap.<br/>
 <br/>
