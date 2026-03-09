@@ -63,3 +63,14 @@ The text segment contains the compiled functions.<br/>
 The function code, everything inside the `{...}` is stored in the text segment, because it is compiled machine code.<br/>
 These addresses are usually **fixed and read-only**.<br/>
 <br/>
+
+# Heap Allocation Tracker
+
+Similar to what we have already done previously, we have developed a function to allocate heaps onto memory:<br/>
+<img width="779" height="444" alt="image" src="https://github.com/user-attachments/assets/03af1747-809e-4326-927c-f7b7d3d1880d" /><br/>
+We have also included another for loop to track the growth of the heap.<br/>
+<br/>
+As per the output below, it seems that the heap allocation growth is not as linear as we had previously thought:<br/>
+<img width="555" height="404" alt="image" src="https://github.com/user-attachments/assets/ab419d8c-43d9-4f78-8822-78fa5fa1d75b" /><br/>
+This is due to the allocator behaviour: the heap allocator may reuse freed blocks or allocate in non-contiguous blocks due to alignment, malloc implementation, or small caches.<br/>
+<br/>
