@@ -25,8 +25,8 @@ We begin this project by first identifying the memory addresses for objects stor
 The image above shows us **how different segments are arranged in memory**.<br/>
 If it looks confusing to read, just know that memory addresses are just numbers. Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
 <br/>
-For example, we compare `initializedGlobal` against `sampleFunction`:<br/>
-- 0x00007FF7FFCFF000 (`initializedGlobal`)
-- 0x00007FF7FFCF11EA (`sampleFunction`)
+Now we shall test out a recursive function to see the effects that it has on the stack:<br/>
+<img width="480" height="196" alt="image" src="https://github.com/user-attachments/assets/7d76caaf-b81a-445f-b9b8-74a6d97dc5a1" /><br/>
 <br/>
-The first is higher than the second because 0x00007FF7FFCFF000 > 0x00007FF7FFCF11EA.
+As we can see in the output, the addresses are decreasing, as stack grows downward over time:<br/>
+<img width="324" height="271" alt="image" src="https://github.com/user-attachments/assets/d2b5214e-f2ad-4dd4-b5fb-f17f9d1e20b1" /><br/>
