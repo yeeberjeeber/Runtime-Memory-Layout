@@ -25,10 +25,10 @@ We begin this project by first identifying the memory addresses for objects stor
 The image above shows us **how different segments are arranged in memory**.<br/>
 If it looks confusing to read, just know that memory addresses are just numbers. Larger numbers → **higher in virtual memory**, smaller numbers → **lower**.<br/>
 Memory in a process is divided into segments: 
-- the text segment holds code
-- Data/BSS segments hold global variables
-- the heap stores dynamically allocated memory
-- the stack stores local variables and function frames.
+- the **text segment** holds code
+- **Data/BSS segments** hold global variables
+- the **heap segment** stores dynamically allocated memory
+- the **stack segment** stores local variables and function frames.
 <br/>
 Now we shall test out a recursive function to see the effects that it has on the stack:<br/>
 <img width="480" height="196" alt="image" src="https://github.com/user-attachments/assets/7d76caaf-b81a-445f-b9b8-74a6d97dc5a1" /><br/>
