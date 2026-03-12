@@ -82,7 +82,7 @@ Only consecutive `new` calls without deletion may mostly increase (as we have do
 
 <br/>
 
-We created a `HeapTracker` class to monitor dynamic memory usage on the heap:<br/>
+Alternatively, we created a `HeapTracker` class with the following variables to monitor dynamic memory usage on the heap:<br/>
 <img width="503" height="129" alt="image" src="https://github.com/user-attachments/assets/2686fe55-8eca-48ff-87ec-32edbb725556" /><br/>
 <br/>
 And the following methods:<br/>
