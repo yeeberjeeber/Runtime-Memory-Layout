@@ -81,15 +81,16 @@ This irregularity is due to the behavior of the heap allocator. It may:<br/>
 Only consecutive `new` calls without deletion may mostly increase (as we have done in the Heap Segment above), but heap addresses are not guaranteed to always strictly increase.<br/>
 
 <br/>
-Created a HeapTracker class instead to with the following variables:<br/>
+
+We created a `HeapTracker` class to monitor dynamic memory usage on the heap:<br/>
 <img width="503" height="129" alt="image" src="https://github.com/user-attachments/assets/2686fe55-8eca-48ff-87ec-32edbb725556" /><br/>
 <br/>
 And the following methods:<br/>
 <img width="979" height="699" alt="image" src="https://github.com/user-attachments/assets/557b2bce-702b-411b-9e86-3ba39514f970" /><br/>
 
-- `void* allocate()` is called when we want to allocate memory on the heap
-- `void deallocate()` is called when we want to free memory on the heap and remove it from the `unordered_map`
-- `void report()` is called to print information on the allocation run, based on the input we supply to `void* allocate`
+- `void* allocate()` - Allocates memory of the given size on the heap and tracks it.
+- `void deallocate()` - Frees memory and removes it from the tracker.
+- `void report()` - Prints a summary of allocations, deallocations, peak usage, and potential memory leaks.
 
 <br/>
 
@@ -99,8 +100,8 @@ In our `main()`, we call the following: <br/>
 And when we run the results are printed as such: <br/>
 <img width="636" height="127" alt="image" src="https://github.com/user-attachments/assets/7bc36d97-0f6b-43ad-bbbf-0f59689c766b" /><br/>
 
-- We allocated 3 times with ptr a, b and c
-- We deallocated only ptr b
-- Report shows that the memory leak occurred for ptr a and c at their respective addresses, along with their sizes
+- Allocated memory for pointers `a`, `b` and `c`
+- Deallocated only pointer `b`
+- Report shows that the memory leak occurred for pointers `a` and `c` at their respective addresses, along with their sizes
 
 <br/>
