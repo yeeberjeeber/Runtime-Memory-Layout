@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="heap_allocation.cpp" />
+    <ClCompile Include="heap_tracker.cpp" />
     <ClCompile Include="RuntimeMemoryTracker.cpp" />
   </ItemGroup>
   <ItemGroup>

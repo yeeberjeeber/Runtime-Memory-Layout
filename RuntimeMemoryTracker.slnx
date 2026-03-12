@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RuntimeMemoryTracker.vcxproj" />
+  <Project Path="RuntimeMemoryTracker.vcxproj" Id="56b7dcb9-c2d2-4561-929e-0ffdb70ccde9" />
 </Solution>

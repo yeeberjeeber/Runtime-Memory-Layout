@@ -21,6 +21,9 @@
     <ClCompile Include="heap_allocation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="heap_tracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
