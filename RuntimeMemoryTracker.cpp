@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdint>
 #include "Header.h"
+#include "heap_tracker.cpp"
 using namespace std;
 
 int initializedGlobal = 42;
@@ -20,6 +21,15 @@ void recurse(int depth) {
 }
 
 int main() {
+
+	HeapTracker tracker;
+
+	void* a = tracker.allocate(1024);
+	void* b = tracker.allocate(2048);
+	void* c = tracker.allocate(512);
+
+	tracker.deallocate(b);
+	tracker.report();
 
 	heapAllocation(10);
 	recurse(1);

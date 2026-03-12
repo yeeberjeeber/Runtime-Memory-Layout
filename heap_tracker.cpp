@@ -27,6 +27,7 @@ public:
 		return ptr;                 // return memory to caller
 
 		cout << "Allocated: " << ptr << "(decimal: " << reinterpret_cast<uintptr_t>(ptr) << ")" << endl;
+		cout << endl;
 	}
 
 	// deallocation
@@ -56,6 +57,7 @@ public:
 				cout << " Address: " << ptr << " (decimal: " << reinterpret_cast<uintptr_t>(ptr) << "), Size: " << size << " bytes" << endl;
 			}
 		}
+		cout << endl;
 	}
 
 	~HeapTracker() {
