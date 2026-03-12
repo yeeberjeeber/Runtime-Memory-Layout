@@ -93,12 +93,14 @@ And the following methods:<br/>
 
 <br/>
 
-In our `main()`, we call as such: <br/>
+In our `main()`, we call the following: <br/>
 <img width="264" height="158" alt="image" src="https://github.com/user-attachments/assets/3a19ecdb-4e18-4a31-93b9-bd943986ea30" /><br/>
 <br/>
 And when we run the results are printed as such: <br/>
 <img width="636" height="127" alt="image" src="https://github.com/user-attachments/assets/7bc36d97-0f6b-43ad-bbbf-0f59689c766b" /><br/>
+
 - We allocated 3 times with ptr a, b and c
 - We deallocated only ptr b
 - Report shows that the memory leak occurred for ptr a and c at their respective addresses, along with their sizes
+
 <br/>
