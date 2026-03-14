@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="heap_allocation.cpp" />
     <ClCompile Include="heap_tracker.cpp" />
+    <ClCompile Include="rule_of_three.cpp" />
     <ClCompile Include="RuntimeMemoryTracker.cpp" />
   </ItemGroup>
   <ItemGroup>

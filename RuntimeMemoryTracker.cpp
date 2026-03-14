@@ -2,6 +2,7 @@
 #include <cstdint>
 #include "Header.h"
 #include "heap_tracker.cpp"
+#include "rule_of_three.cpp"
 using namespace std;
 
 int initializedGlobal = 42;
@@ -21,6 +22,8 @@ void recurse(int depth) {
 }
 
 int main() {
+	Buffer buff1(100);
+	Buffer buff2 = buff1;
 
 	HeapTracker tracker;
 
@@ -31,8 +34,9 @@ int main() {
 	tracker.deallocate(b);
 	tracker.report();
 
-	heapAllocation(10);
-	recurse(1);
+	heapAllocation(10); // heap growth
+	cout << endl;
+	recurse(1); // stack growth
 	cout << endl;
 
 	int stackVar = 5;

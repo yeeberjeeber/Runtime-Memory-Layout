@@ -19,7 +19,7 @@ void heapAllocation(int n) {
 		uintptr_t prev = reinterpret_cast<uintptr_t>(heapAddresses[i - 1]);
 		uintptr_t curr = reinterpret_cast<uintptr_t>(heapAddresses[i]);
 
-		ptrdiff_t diff = prev - curr;
+		ptrdiff_t diff = curr - prev;
 
 		cout << "Heap grew by " << diff << " bytes from allocation " << i - 1 << " to " << i << endl;
 	}
