@@ -109,4 +109,16 @@ And when we run the results are printed as such: <br/>
 # Rule of Three
 
 Let us expand on the heap segment of the memory. In the below code, we show a class that owns heap memory:<br/>
+<img width="406" height="298" alt="Image" src="https://github.com/user-attachments/assets/629e8d7e-a6c5-42f5-891a-39551874317c" /><br/>
+<br/>
 
+And in `main()`:<br/>
+<img width="179" height="53" alt="Image" src="https://github.com/user-attachments/assets/0efbbcfd-a8d6-49bc-bb70-b879cecb04aa" /><br/>
+Both objects now point to the same heap block.<br/>
+- `a.data` → memory
+- `b.data` → same memory block
+
+<br/>
+When we compile and run the code, an error occurs:<br/>
+<img width="407" height="297" alt="Image" src="https://github.com/user-attachments/assets/ac35210d-fa40-4cc8-84fc-b29d613413e5" /><br/>
+<br/>
