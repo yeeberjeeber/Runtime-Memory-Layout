@@ -105,3 +105,8 @@ And when we run the results are printed as such: <br/>
 - Report shows that the memory leak occurred for pointers `a` and `c` at their respective addresses, along with their sizes
 
 <br/>
+
+# Rule of Three
+
+Let us expand on the heap segment of the memory. In the below code, we show a class that owns heap memory:<br/>
+
