@@ -121,4 +121,9 @@ Both objects now point to the same heap block.<br/>
 <br/>
 When we compile and run the code, an error occurs:<br/>
 <img width="407" height="297" alt="Image" src="https://github.com/user-attachments/assets/ac35210d-fa40-4cc8-84fc-b29d613413e5" /><br/>
+
+When the destructors (`~Buffer()`) run, they delete the memory block twice, leading to a crash.<br/>
+
 <br/>
+
+**Hence this is why the Rule of Three exists.**
