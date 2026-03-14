@@ -126,4 +126,32 @@ When the destructors (`~Buffer()`) run, they delete the memory block twice, lead
 
 <br/>
 
-**Hence this is why the Rule of Three exists.**
+**Hence this is why the Rule of Three exists.** <br/>
+
+- A destructor (`~Buffer()`)
+- A copy constructor (`Buffer(const Buffer& other)`)
+- A copy assignment operator (`Buffer& operator=(const Buffer& other)`)
+
+<br/>
+The revised class is as shown below:<br/>
+<img width="631" height="640" alt="Image" src="https://github.com/user-attachments/assets/f8dc96ae-504d-4be9-9e42-6c4c8860fc46" /><br/>
+We have added the copy constructor and a copy assignment operator.<br/>
+<br/>
+
+Now when we run `main()` again:<br/>
+
+<img width="158" height="31" alt="Image" src="https://github.com/user-attachments/assets/83efd8f9-3285-4750-af04-c6c06703a64a" /><br/>
+We get the "Memory freed" message.<br/>
+<br/>
+
+# Why do we need the copy constructor and copy assignment operator? <br/>
+
+1. The **copy constructor** when it runs, is a new object being created from an existing one.
+   - It allocates new memory for the new object and copies the content from the original object.
+   - Hence we have two independent objects with separate memory blocks → **no double deletion of memory block**.
+  
+2. The **copy assignment operator** when it runs, assigns one existing object to another.
+   - It deletes any memory the target object already owns, allocates new memory and copies the content from the original object.
+   - Hence the target object now **has a fresh copy**, the original object **remains unchanged**.
+
+<br/>
